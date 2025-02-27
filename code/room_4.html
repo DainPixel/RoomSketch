@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+    <title>Creat Your Room</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="room.css">
+    <script src="drag_music_rotate.js"></script>
+    <audio id='audio_play' src='back.mp3'></audio> 
+</head>
+<body >
+    <div class="startcontainer">
+        <p>
+        가구를 배치해볼까요?
+        </p>
+        <a href="home.html" style="text-decoration: none;">
+            <div class="menuicon"><img src="버튼_뒤로가기.png" id="icon" width="40px"></div>
+        </a>
+        <a href="start.html" style="text-decoration: none;">
+            <div class="menuicon"><img src="버튼_홈.png" id="icon" width="40px"></div>
+        </a>
+        <div class="menuicon" onclick="play()"><img src="버튼_음악.png" id="icon" width="39px"></div>
+        <div class="menuicon" onclick="darkmode()"><img src="버튼_밤.png" id="icon" width="40px"></div>
+        <br><br>
+        <div style="display: flex; justify-content: center;">
+            <img src="4_바닥_삼각형.png" height="350px" width="690px" style="position: absolute; margin-left: -65px;">
+            <div style="
+                width: auto;
+                height: auto;
+                grid-gap: 1px;
+                align-items: center;
+                display: grid;
+                background: transparent; border: transparent solid 20px;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                margin-left: -30px; margin-top: -5px;">
+                <script>
+                    for (i=12;i>=0;i-=2){
+                        for(k=1;k<=i;k++) {
+                            document.write('<div id="tile" style="border:1px dotted transparent;"></div>')
+                        }
+                        for(k=12;k>i;k--) {
+                            document.write('<div id="tile" ondrop="drop(event)" ondragover="allowDrop(event)"></div>')
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <div id="readytile" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="drag3" class="move" src="5_가구_선반.png" onclick="rotateL_3()" draggable="true" ondragstart="drag(event)" width="180">
+                <img id="drag4" class="move" src="5_가구_쇼파.png" onclick="rotateL_4()" draggable="true" ondragstart="drag(event)" width="180">
+                <img id="drag5" class="move" src="5_가구_탁자.png" onclick="rotateL_5()" draggable="true" ondragstart="drag(event)" width="180">
+                <img id="drag1" class="move" src="5_가구_세면대.png" onclick="rotateL_1()" draggable="true" ondragstart="drag(event)" width="130">
+                <img id="drag6" class="move" src="5_가구_화분.png" onclick="rotateL_6()" draggable="true" ondragstart="drag(event)" width="160">
+                <img id="drag7" class="move" src="5_가구_침대.png" onclick="rotateL_7()" draggable="true" ondragstart="drag(event)" width="170">
+                <img id="drag2" class="move" src="5_가구_싱크대.png" onclick="rotateL_2()" draggable="true" ondragstart="drag(event)" width="180">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

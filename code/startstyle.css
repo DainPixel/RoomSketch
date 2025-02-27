@@ -1,0 +1,53 @@
+html,body {
+    height: 100%;
+}
+body {
+    display: table;
+    background-color: white;
+    font-family: 'Apple SD Gothic Neo';
+    margin: 0 auto;
+    text-align: center;
+}
+.startcontainer {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+img.menuselect {
+    font-weight: bold;
+    background-color: #555;
+    color: white;
+    padding: 10px; margin: 0px;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 100px;
+    margin: 20px;
+    transition: all 1s linear;
+}
+#home_menu {
+    text-align: center;
+}
+img.menuselect:hover {
+
+    transform: rotate( 160deg );
+}
+div.startpress {
+    width: 260px;
+    padding: 20px 50px;
+    background: #BEBBFF;
+    border-radius: 52px;
+    opacity: 1;
+    text-align: center;
+    justify-content: center;
+    transition: 0.1s ease-in-out;
+}
+.startpress:hover {
+    background: #d1d0e9;
+}
+.starttext {
+    text-align: center;
+    font: normal normal bold 40px/59px Noto Sans CJK KR;
+    color: #FFFFFF;
+    opacity: 1;
+    text-decoration: none;
+}

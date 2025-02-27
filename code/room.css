@@ -1,0 +1,78 @@
+html,body {
+    height: 100%;
+}
+body {
+    display: table;
+    background-color: white;
+    font-family: 'Apple SD Gothic Neo';
+    margin: 0 auto;
+    text-align: center;
+}
+.startcontainer {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+#tile {
+    width:45px;height:45px;padding:5px;
+    border:1px dotted #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+#readytile {
+    width:1400px; height:200px;padding: 20px;
+    margin-top: 80px;
+    background: #c6c6c6 0% 0% no-repeat padding-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 24px;
+}
+#container {
+    width: auto;
+    height: auto;
+    grid-gap: 5px;
+    align-items: center;
+    display: grid;
+    background: #F0F0F0;
+    border: #F0F0F0 20px solid;
+    opacity: 1;
+}
+
+img {
+    transition: 0.3s ease-in-out;
+}
+img.move {
+    cursor: move; position: relative;
+    color: white;
+}
+p {
+    text-align: center;
+    font: normal normal bold 43px/82px Noto Sans CJK KR;
+    letter-spacing: 0px;
+    color: #BEBBFF;
+    opacity: 1;
+}
+.menuicon {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: #BEBBFF;
+    border-radius:50px;
+    margin: 0px 2px;
+    transition: 0.1s ease-in-out;
+}
+.menuicon:hover {
+    background: #d1d0e9;
+}
+#icon {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
