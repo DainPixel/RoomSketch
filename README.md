@@ -3,8 +3,8 @@
   RoomSketch (2021)
 </h1>
 
-*A web-based interior design tool created as a term project for a Web Contents Development course.*
-
+**A web-based interior design tool created as a term project for a Web Contents Development course.** <br>
+*The logo represents a house with a dot on the roof, symbolizing a pencil—reflecting the idea of "sketching" room designs.*
 
 ## 📌 Overview  
 ### **🔹 Addressing a Common Problem**
